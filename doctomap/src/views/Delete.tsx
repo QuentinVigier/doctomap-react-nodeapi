@@ -58,18 +58,21 @@ export default function Delete() {
     if (!doctor) return <p>Loading...</p>;
 
     return (
+        <main>
+        <Nav />
         <div className="flex justify-center items-center h-screen bg-gray-100">
             <div className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
-                <h1 className="text-xl font-bold mb-4">Supprimer le Médecin</h1>
+                <h1 className="text-xl text-amber-700 font-bold mb-4">Supprimer le Médecin</h1>
                 {error && <p className="text-red-500">{error}</p>}
                 <p className="mb-4">Êtes-vous sûr de vouloir supprimer le médecin suivant?</p>
                 <p className="mb-2"><strong>ID:</strong> {doctor.id}</p>
                 <p className="mb-2"><strong>Nom:</strong> {doctor.name}</p>
                 <p className="mb-4"><strong>Spécialité:</strong> {doctor.specialty}</p>
                 <button onClick={handleDelete} className="mr-2 px-4 py-2 bg-red-500 text-white rounded hover:bg-red-700">Oui, supprimer</button>
-                <button onClick={() => navigate(-1)} className="px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-700">Annuler</button>
+                <button onClick={() => navigate(-1)} className="px-4 py-2 bg-amber-700 text-white rounded hover:bg-amber-500">Annuler</button>
             </div>
         </div>
+        </main>
     );
     
 }

@@ -8,8 +8,13 @@ import Doctors from './views/Doctors.tsx';
 import Show from './views/Show.tsx';
 import Edit from './views/Edit.tsx';
 import Delete from './views/Delete.tsx';
+import App from './App.tsx';
 
 const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+  },
   {
     path: "/doctors",
     element: <Doctors />,

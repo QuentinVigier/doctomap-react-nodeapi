@@ -8,3 +8,8 @@ Utilisation
 Les endpoints (pointd d'accès) sont définis dans le fichier db.json
 
 GET
+
+pnpm i express
+pnpm i nodemon 
+pnpm i ejs
+node index.js

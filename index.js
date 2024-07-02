@@ -14,7 +14,7 @@ app.set('view engine', 'ejs');      //Définir ejs comme moteur de template
 app.get('/', (req, res) => {
     //res, est une réponse HTTP
     //render, est une méthoden
-    res.render('index');
+    res.render('home');
 })
 
 
